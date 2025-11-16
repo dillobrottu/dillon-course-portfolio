@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    line-height: 2;
+    background-color: #fafafa;
+    color: #1F2937;
+    padding: 32px 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #6B7280;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.button-section {
+    padding: 32px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.button-section p {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+button {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.button-01 {
+    background-color: #0066CC;
+    color: #ffffff;
+    padding: 16px 32px;
+    border: 2px solid #0066CC;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-01:hover {
+    background-color: #ffffff;
+    color: #0066CC;
+    border-color: #0066CC;
+}
+
+.button-02 {
+    background-color: #0e6027;
+    color: #ffffff;
+    padding: 16px 32px;
+    border: 2px solid #0e6027;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-02:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.button-03 {
+    background-color: #0173b6;
+    color: #ffffff;
+    padding: 16px 32px;
+    border: 2px solid #fbdc21;
+	transition: 0.4s ease;
+}
+
+.button-03:hover {
+	transform: scale(150%)
+}
+
+.button-04 {
+    background-color: #4cc5df;
+    color: black;
+	margin: .5px;
+    padding: 16px 32px;
+    outline: 2px solid red;
+    transition: outline-width 0.2s linear;
+}
+
+.button-04:hover {
+   outline-width: 10px;
+}
+
+.button-05 {
+    background-color: #0173b6;
+    color: #ffffff;
+    padding: 16px 32px;
+    border: 5px solid #fbdc21;
+	transition: 0.1s ease, 0.1s ease;
+}
+
+.button-05:hover {
+	animation: bounce 0.6s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+	0% { transform: scale(100%); }
+	10% { transform: scale(110%); }
+	20% { transform: scale(120%); }
+	30% { transform: scale(130%); }
+	40% { transform: scale(140%); }
+	50% { transform: scale(150%); }
+	60% { transform: scale(150%); }
+	70% { transform: scale(140%); }
+	80% { transform: scale(130%); }
+	90% { transform: scale(120%); }
+	100% { transform: scale(110%); }
+}
+
+.button-06 {
+    background-color: #064578;
+    color: #f1bbae;
+    padding: 16px 32px;
+	transition: 0.5s ease, 0.5s ease;
+}
+
+.button-06:hover {
+    animation: shake 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
