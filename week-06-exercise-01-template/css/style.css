@@ -31,7 +31,7 @@ h1 {
   text-align: center;
   margin-bottom: 24px;
   padding-bottom: 48px;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  border-bottom: 3px solid #3730c4;
 }
 
 h2 {
@@ -40,7 +40,7 @@ h2 {
   margin-top: 32px;
   margin-bottom: 16px;
   padding-bottom: 8px;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  border-bottom: 1px solid #3730c4;
 }
 
 p {
@@ -147,16 +147,60 @@ code {
   margin-top: 80px;
 }
 
-.nav-custom {}
+.nav-custom {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+    display: flex;
+    justify-content: center;
+	padding: 0 32px;
+    background-color: #3730c4;
+	z-index: 1000;
+}
 
-.nav-custom ul {}
+.nav-custom ul {
+    display: flex;
+	flex-flow: row wrap;
+    list-style: none;
+	margin: 10px;
+	padding: 0px;
+	gap: 32px;
+}
 
-.nav-custom li {}
+.nav-custom ul li {
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+}
 
-.nav-custom a {}
+.nav-custom ul li a {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-left: 3px solid rgba(0, 0, 0, 0.2);
+	border-right: 3px solid rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: white;
+}
 
-.nav-custom a:hover {}
+.nav-custom ul li:hover {
+    background-color: #0066B1;
+}
 
-@media (width >=480px) {}
+.nav-custom ul li a:hover {
+    color: white;
+}
 
-@media (width >=1024px) {}
+.nav-custom+main {
+  margin-top: 100px;
+}
+
+@media (width >=480px) {
+
+}
+
+@media (width >=1024px) {
+
+}
