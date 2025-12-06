@@ -1,0 +1,128 @@
+body {
+	border-top-style: double;
+	border-left-style: double;
+	border-right-style: double;
+	border-bottom-style: double;
+	border-color: #3730c4;
+	border-width: 25px;	
+	}
+	
+@media (width >= 480px) { 
+	
+nav {
+    width: 90%;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: #3730c4;
+}
+nav .heading {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+	margin: 10px;
+}
+nav .heading a {
+	color: white;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+nav .heading a:hover {
+	background-color: #0066B1;
+	color: white;
+}
+nav ul {
+    display: flex;
+	flex-flow: column wrap;
+    list-style: none;
+	margin: 10px;
+}
+nav ul li {
+    padding: 6px 18px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+nav ul li a {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+nav ul li:hover {
+    background-color: #0066B1;
+}
+nav ul li a:hover {
+    color: white;
+}
+nav .sideMenuButton {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+}
+
+@media (width >= 1200px) { 
+	
+nav {
+    width: 90%;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: #3730c4;
+}
+nav .heading {
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+	margin: 10px;
+}
+nav .heading a {
+	color: white;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+nav .heading a:hover {
+	background-color: #0066B1;
+	color: white;
+}
+nav ul {
+    display: flex;
+	flex-flow: row wrap;
+    list-style: none;
+	margin: 10px;
+}
+nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+nav ul li a {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+	border-radius: 10px;
+    color: white;
+}
+nav ul li:hover {
+    background-color: #0066B1;
+    color: white;
+}
+nav .sideMenuButton {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+}
+
+}

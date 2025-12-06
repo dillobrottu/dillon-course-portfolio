@@ -1,0 +1,132 @@
+.grid-container { 
+	display: grid;
+	grid-template-areas:
+		'intro intro'
+		'exercises assignments'
+		'projects discussions'
+		'foot foot'
+		;
+	gap: 10px;
+	background-color: #3730c4;
+	padding: 10px;
+}
+.grid-container > div {
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+.item1 { 
+	grid-area: intro; 
+}
+.item1 p {
+	font-size:30px;
+}
+.item1 a {
+    color: black;
+    font-size: 50px;
+    font-weight: 500;
+    text-decoration: none;
+	transition: 0.4s ease;
+}
+.item1 a:hover {
+	transform: scale(150%);
+    background-color: #0066B1;
+	color: white;
+}
+.item2 { 
+	grid-area: exercises; 
+}
+.item2 p {
+	font-size:30px;
+}
+.item2 a {
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+	transition: 0.4s ease;
+}
+.item2 a:hover {
+	transform: scale(150%);
+    background-color: #0066B1;
+	color: white;
+}
+.item3 { 
+	grid-area: assignments; 
+}
+.item3 p {
+	font-size:30px;
+}
+.item3 a {
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+	transition: 0.4s ease;
+}
+.item3 a:hover {
+	transform: scale(150%);
+    background-color: #0066B1;
+	color: white;
+}
+.item4 { 
+	grid-area: projects; 
+}
+.item4 p {
+	font-size:30px;
+}
+.item4 a {
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+	transition: 0.4s ease;
+}
+.item4 a:hover {
+	transform: scale(150%);
+    background-color: #0066B1;
+	color: white;
+}
+.item5 { 
+	grid-area: discussions; 
+}
+.item5 p {
+	font-size:30px;
+}
+.item5 a {
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+	transition: 0.4s ease;
+}
+.item5 a:hover {
+	transform: scale(150%);
+    background-color: #0066B1;
+	color: white;
+}
+.item6 { 
+	grid-area: foot; 
+}
+.item6 p {
+	font-size:30px;
+}
+.item6 a {
+	display: block;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.github {
+    background-color: white;
+    color: #ffffff;
+    padding: 12px 12px;
+    border: 2px solid;
+	border-radius: 10px;
+	transition: 0.4s ease;
+}
+.github:hover {
+	transform: scale(125%)
+}
