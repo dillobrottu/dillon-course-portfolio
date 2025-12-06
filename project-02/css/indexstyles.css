@@ -1,3 +1,56 @@
+@media (width >= 480px) { 
+.grid-container { 
+	display: grid;
+	grid-template-areas:
+		'intro'
+		'exercises'
+		'assignments'
+		'projects'
+		'discussions'
+		'foot'
+		;
+	gap: 10px;
+	background-color: #3730c4;
+	padding: 10px;
+}
+.grid-container > div {
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+.grid-container h1 {
+	font-size:50px;
+}
+.grid-container h2 {
+	font-size: 40px;
+}
+.grid-container a {
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+	transition: 0.4s ease;
+}
+.grid-container a:hover {
+	color: #3730c4;
+	text-decoration: underline;
+}
+.github {
+    background-color: white;
+    color: #ffffff;
+    padding: 6px 6px;
+    border: 2px solid;
+	border-radius: 6px;
+	transition: 0.4s ease;
+}
+.github:hover {
+	transform: scale(125%)
+}
+
+}
+
+@media (width >= 1200px) { 
 .grid-container { 
 	display: grid;
 	grid-template-areas:
@@ -27,12 +80,13 @@
     font-size: 50px;
     font-weight: 500;
     text-decoration: none;
-	transition: 0.4s ease;
+	transition: 0.2s ease;
 }
 .item1 a:hover {
 	transform: scale(150%);
     background-color: #0066B1;
 	color: white;
+	text-decoration: underline;
 }
 .item2 { 
 	grid-area: exercises; 
@@ -45,12 +99,12 @@
     font-size: 25px;
     font-weight: 500;
     text-decoration: none;
-	transition: 0.4s ease;
+	transition: 0.2s ease;
 }
 .item2 a:hover {
-	transform: scale(150%);
     background-color: #0066B1;
 	color: white;
+	text-decoration: underline;
 }
 .item3 { 
 	grid-area: assignments; 
@@ -63,12 +117,12 @@
     font-size: 25px;
     font-weight: 500;
     text-decoration: none;
-	transition: 0.4s ease;
+	transition: 0.2s ease;
 }
 .item3 a:hover {
-	transform: scale(150%);
     background-color: #0066B1;
 	color: white;
+	text-decoration: underline;
 }
 .item4 { 
 	grid-area: projects; 
@@ -81,12 +135,12 @@
     font-size: 25px;
     font-weight: 500;
     text-decoration: none;
-	transition: 0.4s ease;
+	transition: 0.2s ease;
 }
 .item4 a:hover {
-	transform: scale(150%);
     background-color: #0066B1;
 	color: white;
+	text-decoration: underline;
 }
 .item5 { 
 	grid-area: discussions; 
@@ -99,12 +153,12 @@
     font-size: 25px;
     font-weight: 500;
     text-decoration: none;
-	transition: 0.4s ease;
+	transition: 0.2s ease;
 }
 .item5 a:hover {
-	transform: scale(150%);
     background-color: #0066B1;
 	color: white;
+	text-decoration: underline;
 }
 .item6 { 
 	grid-area: foot; 
@@ -129,4 +183,6 @@
 }
 .github:hover {
 	transform: scale(125%)
+}
+
 }
